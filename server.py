@@ -15,12 +15,12 @@ import socket
 from datetime import datetime
 import psycopg2
 
-# Conexión a PostgreSQL (local o en Google Cloud)
+# Conexión a PostgreSQL
 conn = psycopg2.connect(
     dbname="netadmin",
     user="netadmin_user",
     password="12345",
-    host="localhost",   # Si usas Google Cloud, cambia por la IP pública de la instancia
+    host="localhost",
     port="5432"
 )
 cursor = conn.cursor()
